@@ -1,5 +1,5 @@
 {
     "editor.minimap.enabled": true,
     "editor.minimap.showRegionSectionHeaders": true,
-    "files.autoSave": "off"
+    "files.autoSave": "afterDelay"
 }
