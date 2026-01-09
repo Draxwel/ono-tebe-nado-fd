@@ -104,11 +104,12 @@
 
 .aligned-text_left {
   text-align: left;
-  padding: 0 44.5px 20px 0;
+  padding: 0 44.5px 30px 0; /*Добавил отступ, что бы схоже стало с образцом 30 (было 20)*/
 }
 
 .aligned-text_center {
-  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-bottom: 30px; /*Добавил отступ, что бы схоже стало с образцом*/
   text-align: center;
 }
 
@@ -156,10 +157,10 @@
 
 .lots__heading {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 700px;
   text-transform: uppercase;
   margin-bottom: 27px;
-  padding-left: 64px;
+  padding-left: 40px; /*Добавил отступ, что бы схоже стало с образцом*/
 }
 
 .lots__card-list {
@@ -226,13 +227,13 @@
   font-size: 20px;
   color: #000;
   text-underline-position: under;
-  padding-left: 64px;
+  padding-left: 40px;
 }
 /* ================= ABOUT ================= */
 .about {
-  max-width: 1052px;
+  max-width: 1052px; /* Почему не получается сдвинуть влево картинку*/ 
   min-height: 595px;
-  margin: 0 auto;
+  margin: 0 24px; /* При его отключении в Хроме, отсуп более-менее подходит*/
   padding: 0 24px 180px;
   display: grid;
   grid-template-columns: 430px 1fr;
@@ -252,7 +253,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 35px auto;
+  margin: 35px 72px auto 47px; /* Поменял 35px auto на 35 72 auto 47*/ 
 }
 
 .about__logo-image {
@@ -263,7 +264,7 @@
 
 .about__title {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 700px;
   text-transform: uppercase;
   margin-bottom: 100px;
 }
