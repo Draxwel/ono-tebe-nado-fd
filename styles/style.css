@@ -103,13 +103,13 @@
 }
 
 .aligned-text_left {
-  text-align: left;
-  padding: 0 44.5px 30px 0; /*Добавил отступ, что бы схоже стало с образцом 30 (было 20)*/
+  padding: 0 44.5px 20px 0;
+  text-align: left; 
 }
 
 .aligned-text_center {
-  padding-right: 10px;
-  padding-bottom: 30px; /*Добавил отступ, что бы схоже стало с образцом*/
+  padding-left: 30px;
+  padding-bottom: 20px; /*Добавил отступ, что бы схоже стало с образцом*/
   text-align: center;
 }
 
@@ -236,8 +236,8 @@
   margin: 0 24px; /* При его отключении в Хроме, отсуп более-менее подходит*/
   padding: 0 24px 180px;
   display: grid;
-  grid-template-columns: 430px 1fr;
-  gap: 25px;
+  grid-template-columns: 430px 1fr; /* или 360px 1fr*/
+  gap: 25px; /* При его отключении в Хроме, отсуп более-менее подходит*/
   align-items: start;
 }
 
