@@ -157,13 +157,14 @@
 
 .lots__heading {
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 27px;
   padding-left: 40px; /*Добавил отступ, что бы схоже стало с образцом*/
 }
 
 .lots__card-list {
+  flex-wrap: wrap;
   list-style: none;
   display: flex;
   gap: 25px;
@@ -264,7 +265,7 @@
 
 .about__title {
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 100px;
 }
@@ -330,7 +331,9 @@
   display: flex;
   gap: 48px;
 }
-
+.footer__menu-list-item-active {
+  text-decoration: none;
+}
 .footer__social-list-item {
   list-style: none;
 }
