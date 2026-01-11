@@ -1,10 +1,11 @@
 /* ============ HEADER ============== */
-.header {
+header, footer {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   max-width: 1100px;
-  min-height: 293px;
+}
+.header {
   margin: 0 auto;
 }
 
@@ -37,8 +38,8 @@
 
 .header__logo {
   display: block;
-  width: 148px;
-  min-height: 105px;
+  width: 129.11px;
+  min-height: 104.65px;
 }
 
 .header__logo-image {
@@ -52,7 +53,6 @@
   font-size: 18px;
   line-height: 1.35;
   min-width: 240px;
-  min-height: 98px;
 }
 
 .header__address {
@@ -151,7 +151,6 @@
 /* ================= LOTS ================= */
 .lots {
   max-width: 1052px;
-  min-height: 723px;
   margin: 0 auto 120px;
 }
 
@@ -173,7 +172,6 @@
 
 .lots__card-list-item {
   max-width: 334px;
-  min-height: 596px;
 }
 
 .card-link {
@@ -232,18 +230,14 @@
 }
 /* ================= ABOUT ================= */
 .about {
-  max-width: 1052px; /* Почему не получается сдвинуть влево картинку*/ 
-  min-height: 595px;
-  margin: 0 24px; /* При его отключении в Хроме, отсуп более-менее подходит*/
-  padding: 0 24px 180px;
+  margin: 0 24px 180px; 
   display: grid;
-  grid-template-columns: 430px 1fr; /* или 360px 1fr*/
-  gap: 25px; /* При его отключении в Хроме, отсуп более-менее подходит*/
+  grid-template-columns: 359px 1fr;
   align-items: start;
 }
 
 .about__column {
-  margin: 133px 0;
+  margin: 133px 0 0;
 }
 
 .about__logo {
@@ -254,13 +248,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 35px 72px auto 47px; /* Поменял 35px auto на 35 72 auto 47*/ 
+  margin: 35px auto auto 47px
 }
 
 .about__logo-image {
+  max-width: 148px;
+  max-height: 114px;
   object-fit: contain;
-  width: 148px;
-  height: 114px;
 }
 
 .about__title {
@@ -274,6 +268,7 @@
   display: flex;
   flex-direction: column;
   font-size: 20px;
+  gap: 24px;
   line-height: 1.2;
 }
 
@@ -282,13 +277,8 @@
 }
 /* ================= FOOTER ================= */
 .footer {
-  max-width: 1100px;
-  min-height: 180px;
   margin: 0 auto;
-  padding: 0 50px;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: flex-start;
+  padding: 0 50px 82px;
 }
 
 .footer .address {
