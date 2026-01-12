@@ -1,5 +1,6 @@
 /* ============ HEADER ============== */
-header, footer {
+header, 
+footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   max-width: 1100px;
@@ -100,15 +101,14 @@ header, footer {
 .aligned-text {
    display: block;
 }
-
 .aligned-text_left {
-  padding: 0 44.5px 20px 0;
-  text-align: left; 
+ padding: 0 44.5px 20px 0;
+ text-align: left;
 }
 
 .aligned-text_center {
   padding-left: 30px;
-  padding-bottom: 18px; /*Добавил отступ, что бы схоже стало с образцом*/
+  padding-bottom: 18px; 
   text-align: center;
 }
 
