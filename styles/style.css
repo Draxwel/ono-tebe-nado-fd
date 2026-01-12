@@ -108,7 +108,7 @@ header, footer {
 
 .aligned-text_center {
   padding-left: 30px;
-  padding-bottom: 20px; /*Добавил отступ, что бы схоже стало с образцом*/
+  padding-bottom: 18px; /*Добавил отступ, что бы схоже стало с образцом*/
   text-align: center;
 }
 
@@ -183,7 +183,7 @@ header, footer {
   position: relative;
   height: 100%;
   min-height: 596px;
-  padding: 50px 40px;
+  padding: 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -260,6 +260,7 @@ header, footer {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 3px;
   margin-bottom: 100px;
 }
 
@@ -283,11 +284,13 @@ header, footer {
 .footer .address {
   justify-self: start;
   display: flex;
+  line-height: 24.3px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2px;
 }
-
+.footer .address p {
+  margin-top: 1px;
+}
 .footer__menu {
   justify-self: center;
 }
