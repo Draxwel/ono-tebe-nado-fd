@@ -12,7 +12,7 @@ header, footer {
   justify-self: start;
   margin: 133px 0 138px 50px;
 }
-.header-footer__link_active {
+.nav__link--active {
  text-decoration: none;
 }
 .header__links-list {
@@ -51,15 +51,12 @@ header, footer {
   font-style: normal;
   font-size: 18px;
   line-height: 24.3px;
-  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .header__address {
-  justify-self: end;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
   margin: 95px 50px 100px 184px;
 }
 
@@ -157,7 +154,7 @@ header, footer {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 27px;
-  padding-left: 40px; /*Добавил отступ, что бы схоже стало с образцом*/
+  padding-left: 40px;
 }
 
 .lots__card-list {
@@ -280,13 +277,6 @@ header, footer {
   padding: 0 50px 80px;
 }
 
-.footer .address {
-  justify-self: start;
-  display: flex;
-  line-height: 24.3px;
-  flex-direction: column;
-  align-items: flex-start;
-}
 .footer .address p {
   margin-top: 1px;
 }
